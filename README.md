@@ -3,6 +3,8 @@ A quick and dirty tool for extracting and compressing VFS2 archives used by the 
 
 Older versions of Terraria use an older version of VSF2, this tool is only intended for PS Vita 1.11.
 
+And yes, I know theres a typo in the repo name.
+
 ## Usage
 For extracting run:
 ```shell
