@@ -1,0 +1,13 @@
+/.venv/
+/.idea/
+/out*/
+*.vfs
+*.gxt
+*.txt
+*.at9
+*.vag
+*.ps
+*.fnt
+*.str
+*.wld
+.DS_Store
