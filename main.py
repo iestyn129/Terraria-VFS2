@@ -22,22 +22,6 @@ def main() -> None:
 				vfs.load_folder()
 				vfs.compress()
 				print(f'successfully compressed to {input_vfs}')
-			case 'f':
-				vfs.load_folder()
-				name: str; ext: str
-				name, ext = path.splitext(input_vfs)
-				with VFS(f'{name}_old{ext}', vfs_folder) as vfs2:
-					vfs2.load_file()
-					hash_map: dict[str, int] = {}
-					for file in vfs2.files:
-						hash_map[file.name] = file.name_hash
-
-					for file in vfs.files:
-						if hash_map.get(file.name) != file.name_hash:
-							file.name_hash = hash_map.get(file.name, file.name_hash)
-							print(f'file {file.name} hash changed to {file.name_hash}')
-
-					vfs.compress()
 			case _:
 				print(f'unsupported mode: {mode}')
 

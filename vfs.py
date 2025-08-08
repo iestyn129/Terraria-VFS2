@@ -166,11 +166,13 @@ class VFS:
 		num_folders: int = read_int(self.fp)
 		for _ in range(num_folders):
 			self.folders.append(VDirectory.read(self.fp))
+		self.folders.sort(key=lambda f: f.id)
 
 		# parse files
 		num_files: int = read_int(self.fp)
 		for _ in range(num_files):
 			self.files.append(VFile.read(self.fp))
+		self.files.sort(key=lambda f: f.id)
 
 		# get offsets
 		self.name_table_offset = read_int(self.fp)

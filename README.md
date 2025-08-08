@@ -8,16 +8,16 @@ For extracting run:
 ```shell
 python main.py extract input.vfs output_folder
 ```
-`extract` and be shortend to `e`.
+`extract` and be shortened to `e`.
 
 For compressing run:
 ```shell
 python main.py compress output.vfs input_folder
 ```
-`compress` and be shortend to `c`.
+`compress` and be shortened to `c`.
 
 ## Known Issues
-Some UI textures will break when using this tool as the `ui` folder has an unknown flag set to 9. As of writing this I do not know what this does, but there does exist a `fix` or `f` option that will pull file path hashes from an old/original VFS2 archive.
+Setting the unknown flag of folders is still hardcoded as it is unknown what they do or how to choose which ones.
 
 ## Thanks
 Huge thanks to [LITTOMA](https://github.com/LITTOMA) and their [vfs2](https://github.com/LITTOMA/vfs2) tool for doing the initial research on VFS2 archives.
