@@ -1,5 +1,5 @@
 # Terraria VFS2
-A quick and dirty tool for extracting and compressing VFS2 archives used by the PS Vita and Wii U versions of Terraria.
+A quick and dirty tool for extracting and compressing VFS2 archives used by numerous old-gen console versions of Terraria.
 
 Older versions of Terraria use an older version of VFS2, this tool is only intended for PS Vita 1.11.
 
