@@ -1,6 +1,5 @@
 from sys import argv
-from vfs import VFS, hash_name
-import posixpath as path
+from vfs import VFS
 
 
 def main() -> None:
