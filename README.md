@@ -8,13 +8,13 @@ For extracting run:
 ```shell
 python main.py extract input.vfs output_folder
 ```
-`extract` and be shortened to `e`.
+`extract` can be shortened to `e`.
 
 For compressing run:
 ```shell
 python main.py compress output.vfs input_folder
 ```
-`compress` and be shortened to `c`.
+`compress` can be shortened to `c`.
 
 ## Known Issues
 Setting the unknown flag of folders is still hardcoded as it is unknown what they do or how to choose which ones.
